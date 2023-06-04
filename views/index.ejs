@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <img
+        src="https://chojugiga.com/c/choju64_0019/s512_choju64_0019_2.png"
+        alt="pokemon_logo" class="card-img">
+      <h1 class="card-title">查詢各縣市或鄉鎮電話區碼</h1>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '區碼' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="輸入查詢的地區" />
+      <button type="submit" class="card-btn">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
